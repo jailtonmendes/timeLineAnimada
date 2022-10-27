@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Step Progress Bar</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- UniIcon CDN Link  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="head">
+            <p class="head_1">Timeline da <span>Venda</span></p>
+            <!-- <p class="head_2">Using Html, Css & JavaScript</p> -->
+        </div>
+
+        <ul>
+            <li>
+                <i class="icon uil uil-capture"></i>
+                <div class="progress one">
+                    <p>1</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Venda</p>
+            </li>
+            <li>
+                <i class="icon uil uil-clipboard-notes"></i>
+                <div class="progress two">
+                    <p>2</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Projeto Executivo</p>
+            </li>
+            <li>
+                <i class="icon uil uil-credit-card"></i>
+                <div class="progress three">
+                    <p>3</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Logistica</p>
+            </li>
+            <li>
+                <i class="icon uil uil-exchange"></i>
+                <div class="progress four">
+                    <p>4</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Produção</p>
+            </li>
+            <li>
+                <i class="icon uil uil-map-marker"></i>
+                <div class="progress five">
+                    <p>5</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Entrega</p>
+            </li>
+            <!-- <li>
+                <i class="icon uil uil-map-marker"></i>
+                <div class="progress six">
+                    <p>5</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Order Arrived</p>
+            </li> -->
+        </ul>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+<script>
+
+
+
+const one = document.querySelector(".one");
+const two = document.querySelector(".two");
+const three = document.querySelector(".three");
+const four = document.querySelector(".four");
+const five = document.querySelector(".five");
+const six = document.querySelector(".six");
+
+one.onclick = function() {
+    one.classList.add("active");
+    two.classList.remove("active");
+    three.classList.remove("active");
+    four.classList.remove("active");
+    five.classList.remove("active");
+    six.classList.remove("active");
+}
+
+two.onclick = function() {
+    one.classList.add("active");
+    two.classList.add("active");
+    three.classList.remove("active");
+    four.classList.remove("active");
+    five.classList.remove("active");
+    six.classList.remove("active");
+}
+three.onclick = function() {
+    one.classList.add("active");
+    two.classList.add("active");
+    three.classList.add("active");
+    four.classList.remove("active");
+    five.classList.remove("active");
+    six.classList.remove("active");
+}
+four.onclick = function() {
+    one.classList.add("active");
+    two.classList.add("active");
+    three.classList.add("active");
+    four.classList.add("active");
+    five.classList.remove("active");
+    six.classList.remove("active");
+}
+five.onclick = function() {
+    one.classList.add("active");
+    two.classList.add("active");
+    three.classList.add("active");
+    four.classList.add("active");
+    five.classList.add("active");
+    six.classList.remove("active");
+}
+six.onclick = function() {
+    one.classList.add("active");
+    two.classList.add("active");
+    three.classList.add("active");
+    four.classList.add("active");
+    five.classList.add("active");
+    six.classList.add("active");
+}
+</script>
+</html>
+
+
+
+
